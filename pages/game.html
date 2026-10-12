@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Game | Disappearing Professors</title>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="wrap brand">🎓 Disappearing Professors</div>
+    </header>
+    <main class="wrap game-shell">
+      <div class="stats">
+        <div class="stat"><b id="level">1</b><span>LEVEL</span></div>
+        <div class="stat"><b id="score">0</b><span>SCORE</span></div>
+        <div class="stat"><b id="combo">×1</b><span>COMBO</span></div>
+        <div class="stat"><b id="lives">❤️❤️❤️</b><span>LIVES</span></div>
+      </div>
+      <div class="progress"><div id="progress"></div></div>
+      <p id="status" style="text-align: center; color: #aeb8d0">
+        Freshman • Get ready
+      </p>
+      <section id="gameArea" class="game-area">
+        <img id="target" alt="Professor" />
+        <div id="special" class="power"></div>
+        <div id="levelBanner" class="level-banner"></div>
+        <div id="intro" class="overlay">
+          <div class="overlay-box">
+            <h1>Ready, <span id="player"></span>?</h1>
+            <p>Five levels stand between you and graduation.</p>
+            <button id="begin" class="btn gold">Begin Level 1</button>
+          </div>
+        </div>
+        <div id="result" class="overlay hidden">
+          <div class="overlay-box">
+            <h1 id="resultTitle">Semester Over</h1>
+            <p id="resultText"></p>
+            <div class="buttons">
+              <button id="again" class="btn primary">Play Again</button
+              ><a class="btn" href="../index.html">Main Menu</a
+              ><a class="btn" href="leaderboard.html">Leaderboard</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="../assets/js/game.js"></script>
+  </body>
+</html>

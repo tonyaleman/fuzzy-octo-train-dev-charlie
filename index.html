@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Disappearing Professors: Level Up</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="wrap brand">🎓 Disappearing Professors</div>
+    </header>
+    <main class="wrap">
+      <section class="card menu">
+        <div class="eyebrow">AI LEVEL UP EDITION</div>
+        <h1 class="hero">Class is in session.</h1>
+        <p class="subtitle">
+          Hit professors, build combos, survive five levels, and graduate.
+        </p>
+        <div class="field">
+          <label for="username">Player name</label
+          ><input id="username" maxlength="18" placeholder="Enter username" />
+        </div>
+        <div class="field">
+          <label for="difficulty">Difficulty</label
+          ><select id="difficulty">
+            <option value="normal">Normal — 3 lives</option>
+            <option value="hard">Hard — faster targets</option>
+            <option value="chaos">Chaos — fastest + more traps</option>
+          </select>
+        </div>
+        <div class="buttons">
+          <button class="btn primary" id="start">Start Semester</button
+          ><a class="btn" href="pages/how-to-play.html">How to Play</a
+          ><a class="btn" href="pages/leaderboard.html">Leaderboard</a>
+        </div>
+        <p id="best" class="subtitle" style="margin-top: 22px"></p>
+      </section>
+    </main>
+    <script src="assets/js/menu.js"></script>
+  </body>
+</html>
